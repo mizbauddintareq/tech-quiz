@@ -11,7 +11,7 @@ const Quiz = ({
 }) => {
   const handleAnswer = (ans) => {
     if (ans === quiz?.correctAnswer) {
-      setRightCount(rightCount);
+      setRightCount(rightCount + 1);
       Swal.fire({
         position: "top-center",
         icon: "success",
