@@ -2,9 +2,16 @@ import React from "react";
 import Swal from "sweetalert2";
 import { EyeIcon } from "@heroicons/react/24/solid";
 
-const Quiz = ({ quiz }) => {
+const Quiz = ({
+  quiz,
+  wrongCount,
+  setWrongCount,
+  rightCount,
+  setRightCount,
+}) => {
   const handleAnswer = (ans) => {
     if (ans === quiz?.correctAnswer) {
+      setRightCount(rightCount);
       Swal.fire({
         position: "top-center",
         icon: "success",
@@ -13,6 +20,7 @@ const Quiz = ({ quiz }) => {
         timer: 1500,
       });
     } else {
+      setWrongCount(wrongCount + 1);
       Swal.fire({
         icon: "error",
         title: "Wrong Answer!",
@@ -30,7 +38,7 @@ const Quiz = ({ quiz }) => {
     <div>
       <div
         tabIndex={0}
-        className="collapse my-3 collapse-plus border border-base-300 bg-base-100 rounded-box"
+        className="collapse my-3 collapse-arrow border border-base-300 bg-base-100 rounded-box"
       >
         <div className="collapse-title text-xl font-medium">
           {quiz?.question}

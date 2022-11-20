@@ -4,7 +4,7 @@ import "./Topic.css";
 const Topic = ({ topic }) => {
   const { id, name, logo, total } = topic;
   return (
-    <div className="card shadow-xl bg-gradient-to-t from-cyan-100 to-blue-100 border-style ">
+    <div className="card shadow-xl bg-gradient-to-t from-cyan-100 to-blue-100 border-style">
       <figure className="px-10 pt-10">
         <img src={logo} alt="quiz-logo" className="rounded-xl" />
       </figure>
