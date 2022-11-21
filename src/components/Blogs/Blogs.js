@@ -1,6 +1,6 @@
 const Blogs = () => {
   return (
-    <div className="w-8/12 mx-auto my-5">
+    <div className="md:w-8/12 mx-auto my-5">
       <div
         tabIndex={0}
         className="collapse collapse-plus border border-base-300 bg-base-100 rounded-box"
