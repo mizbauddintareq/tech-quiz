@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import Blogs from "../components/Blogs/Blogs";
 import Home from "../components/Home/Home";
+import NotFound from "../components/NotFound/NotFound";
 import Quizzes from "../components/Quizzes/Quizzes";
 import Statistic from "../components/Statistic/Statistic";
 import Main from "../layouts/Main";
@@ -33,5 +34,9 @@ export const router = createBrowserRouter([
         element: <Statistic />,
       },
     ],
+  },
+  {
+    path: "*",
+    element: <NotFound />,
   },
 ]);

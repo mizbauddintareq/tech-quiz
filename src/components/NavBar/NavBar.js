@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 
 const NavBar = () => {
@@ -36,6 +35,9 @@ const NavBar = () => {
             <li>
               <Link to="/statistic">Blogs</Link>
             </li>
+            <li>
+              <Link to="/mizba">Error</Link>
+            </li>
           </ul>
         </div>
         <Link to="/" className="btn btn-ghost normal-case text-xl">
@@ -53,6 +55,9 @@ const NavBar = () => {
           </li>
           <li>
             <Link to="/statistic">Statistic</Link>
+          </li>
+          <li>
+            <Link to="/mizba">Error</Link>
           </li>
         </ul>
       </div>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import CountAnswer from "../CountAnswer/CountAnswer";
 import Quiz from "../Quiz/Quiz";

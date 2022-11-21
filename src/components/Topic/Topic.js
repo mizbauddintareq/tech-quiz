@@ -1,6 +1,6 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import "./Topic.css";
+
 const Topic = ({ topic }) => {
   const { id, name, logo, total } = topic;
   return (
@@ -14,7 +14,7 @@ const Topic = ({ topic }) => {
         <div className="card-actions mt-2">
           <Link
             to={`/quizzes/${id}`}
-            className=" border-0 btn  bg-gradient-to-r from-cyan-500 to-blue-500 "
+            className=" border-0 btn  bg-gradient-to-r from-cyan-500 to-blue-500"
           >
             See Quizzes
           </Link>

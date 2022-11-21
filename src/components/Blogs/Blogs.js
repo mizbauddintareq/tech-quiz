@@ -1,5 +1,3 @@
-import React from "react";
-
 const Blogs = () => {
   return (
     <div className="w-8/12 mx-auto my-5">

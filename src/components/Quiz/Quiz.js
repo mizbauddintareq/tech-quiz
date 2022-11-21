@@ -1,4 +1,3 @@
-import React from "react";
 import Swal from "sweetalert2";
 import { EyeIcon } from "@heroicons/react/24/solid";
 

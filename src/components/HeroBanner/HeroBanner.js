@@ -1,5 +1,3 @@
-import React from "react";
-
 const HeroBanner = () => {
   return (
     <div
@@ -13,11 +11,13 @@ const HeroBanner = () => {
         <div className="max-w-md">
           <h1 className="mb-5 text-5xl font-bold">Hey Developer!</h1>
           <p className="mb-5">
-            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-            excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
-            a id nisi.
+            Test your understanding of Software development concepts with Tech
+            Quiz quick multiple choice quizzes. Missed a question here and
+            there?
           </p>
-          <button className="btn btn-primary">Get Started</button>
+          <button className="btn bg-gradient-to-r from-cyan-500 to-blue-500 border-0 font-bold">
+            Get Started
+          </button>
         </div>
       </div>
     </div>
