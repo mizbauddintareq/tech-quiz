@@ -15,6 +15,9 @@ const Statistic = () => {
   return (
     <div className="flex justify-center mt-8">
       <div>
+        <h3 className="text-center font-semibold text-3xl text-cyan-600 my-5">
+          Quiz Data Visualization
+        </h3>
         <BarChart
           width={700}
           height={500}
@@ -32,7 +35,7 @@ const Statistic = () => {
           <Tooltip />
           <Legend />
 
-          <Bar dataKey="total" stackId="a" fill="#82ca9d" />
+          <Bar dataKey="total" stackId="a" fill="#0D98BA" />
         </BarChart>
       </div>
     </div>
